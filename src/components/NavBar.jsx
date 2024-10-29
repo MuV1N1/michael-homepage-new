@@ -15,7 +15,7 @@ export class NavBar extends Component {
 
   render() {
     return (
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 bg-gray-400/[.6]">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 bg-vibrantPink/[.6]">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
             <i className="fa-solid fa-music h-50"></i>
