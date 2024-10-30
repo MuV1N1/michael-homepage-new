@@ -18,7 +18,7 @@ export class NavBar extends Component {
       <nav className="border-gray-200 dark:bg-transaprent900 bg-gradient-to-b from-skyBlue/[.6] to-customBlack">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <i className="fa-solid fa-music h-50"></i>
+          <i className="fa-solid fa-music text-transparent bg-clip-text bg-gradient-to-r from-vibrantPink via-deepOrange via-limeGreen to-softYellow"></i>
           </a>
           <button
             onClick={this.toggleNavbar} // Calls toggle function
