@@ -1,5 +1,3 @@
-import { StrictMode } from 'react'
-import React from 'react';
 import { createRoot } from 'react-dom/client'
 import './css/index.css'
 
@@ -10,6 +8,6 @@ import BannerComponent from './components/BannerComponent';
 createRoot(document.getElementById('root')).render(
   <>
     <NavBar />
-    <BannerComponent /> 
+    <BannerComponent />
   </>
 )

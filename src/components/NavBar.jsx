@@ -13,12 +13,14 @@ export class NavBar extends Component {
     }));
   };
 
+  //TODO: - Current page getter like make the activated page an other color or so....
+
   render() {
     return (
       <nav className="border-gray-200 dark:bg-transaprent900 bg-gradient-to-b from-skyBlue/[.6] to-customBlack">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <i className="fa-solid fa-music text-transparent bg-clip-text bg-gradient-to-r from-vibrantPink via-deepOrange via-limeGreen to-softYellow"></i>
+          <i className="fa-solid fa-music text-navBarText "></i>
           </a>
           <button
             onClick={this.toggleNavbar} // Calls toggle function
@@ -47,7 +49,7 @@ export class NavBar extends Component {
           <div className={`${this.state.isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transaprent100[.6] dark:bg-transaprent800 md:dark:bg-transaprent900 dark:border-gray-700">
               <li>
-                <a href="#" className="block py-2 px-3 text-white bg-transparent rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                <a href="#" className="block py-2 px-3 text-white bg-transparent rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:textnavBarText" aria-current="page">Home</a>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-transaprent md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-transaprent dark:hover:text-white md:dark:hover:bg-transparent">Über mich</a>
